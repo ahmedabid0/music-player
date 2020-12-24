@@ -135,6 +135,6 @@ header h1 {
     .music-container {
         width:300px;
         max-height: 480px;
-        margin: 20px auto;
+        margin: 20px auto!important;
     }
 }
