@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background:rgb(236, 236, 236);
+}
+
+header h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.music-container {
+    width:400px;
+    min-height: 550px;
+    background:#fff;
+    border-radius: 5%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 16px -10px;
+    border-right: 5px solid rgb(199, 10, 10);
+    border-bottom: 5px solid rgb(199, 10, 10);
+    border-left: 5px solid #fa7203;
+    border-top: 5px solid #fa7203;
+}
+
+.m-picture {
+    width:250px;
+    margin:auto;
+}
+
+.m-picture img {
+    margin-top: 30px;
+    animation: rotation 15s ease infinite;
+}
+
+.m-name {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing:3px;
+}
+
+.progress-container {
+    height: 4px;
+    width: 95%;
+    background-color: rgb(199, 10, 10);
+    margin: 50px auto;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.progress {
+    background-color: #000000;
+    width: 0%;
+    height: inherit;
+    border-radius: inherit;
+    transition: width 100ms ease-in;
+}
+
+.time-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: -50px;
+}
+
+.time-bar span {
+    font-weight: bold;
+}
+
+.m-controler {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.m-controler #prev,#next {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    color: #fa7203;
+    transition: background 200ms linear, color 200ms linear;
+}
+
+.m-controler #play {
+    background-color: rgb(199, 10, 10);
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    transition: opacity 200ms linear;
+}
+
+.m-controler #play:hover {
+    opacity: 0.8;
+}
+
+#p {
+    color: #fa7203;
+}
+#m {
+    color: rgb(199, 10, 10);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
