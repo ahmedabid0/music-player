@@ -98,10 +98,8 @@ progressContainer.addEventListener('click', setProgress);
 function nextSong() {
     if (songIndex === songs.length - 1) {
         songIndex = 0;
-        console.log(songIndex);
     } else {
         songIndex = songIndex + 1;
-        console.log(songIndex);
     }
     loadSongs(songs[songIndex]);
     iconCheck();
