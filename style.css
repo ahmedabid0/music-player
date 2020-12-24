@@ -126,3 +126,14 @@ header h1 {
         transform: rotate(360deg);
     }
 }
+
+@media only screen and (max-width:768px) {
+    header h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .music-container {
+        width:300px;
+        max-height: 480px;
+    }
+}
